@@ -23,8 +23,6 @@
 
 
 
-# Basic Overview
-- dir() for help 
 
 
 
