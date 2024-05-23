@@ -89,4 +89,63 @@
         del thistuple
         print(thistuple) #this will raise an error because the tuple no longer exists
 
-        
+  # unpack tuple
+  - When we create a tuple, we normally assign values to it. This is called "packing" a tuple.
+  - eg. fruits = ("apple", "banana", "cherry")
+  - we are also allowed to extract the values back into variables. This is called "unpacking".
+  eg.
+    fruits = ("apple", "banana", "cherry")
+    (green, yellow, red) = fruits
+    print(green)
+    print(yellow)
+    print(red)
+
+  Note: The number of variables must match the number of values in the tuple, if not, you must 
+        use an asterisk to collect the remaining values as a list.
+
+  - If the number of variables is less than the number of values, you can add an * to the variable 
+    name and the values will be assigned to the variable as a list.
+  - If the asterisk is added to another variable name than the last, Python will assign values to 
+    the variable until the number of values left matches the number of variables left.
+    eg.1 
+      fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+      (green, yellow, *red) = fruits
+      print(green)
+      print(yellow)
+      print(red)
+      # output
+      apple
+      banana
+      ['cherry', 'strawberry', 'raspberry']
+
+    eg.2   
+      fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+      (green, *tropic, red) = fruits
+      print(green)
+      print(tropic)
+      print(red)
+      # output
+      apple
+      ['mango', 'papaya', 'pineapple']
+      cherry
+
+  # loops in tuple
+  thistuple = ("apple", "banana", "cherry")
+  for x in thistuple:
+    print(x)
+
+
+  - To join two or more tuples you can use the + operato.
+    eg. tuple1 = ("a", "b" , "c")
+        tuple2 = (1, 2, 3)
+        tuple3 = tuple1 + tuple2
+        print(tuple3)
+
+  - If you want to multiply the content of a tuple a given number of times, you can use the * operator.
+   fruits = ("apple", "banana", "cherry")
+    mytuple = fruits * 2
+    print(mytuple)
+    # outout 
+    ("apple", "banana", "cherry", "apple", "banana", "cherry")
+
+    
