@@ -270,18 +270,33 @@ setB = {"google", "microsoft", "apple"}
 # sentence = "hello, world this is a test of set World is a world."
 # print(set(sentence.split()))
 
+# or 
+
+# def unique_set(sentence):
+#     return set(sentence.split())
+# sentence = "hello, world, this is a test of set World is a world."
+# print(unique_set(sentence))
+
 # 22 Given two strings, str1 = "hello" and str2 = "world", find the common characters using sets.
 # str1 = "hello"
 # str2 = "world"
 # print(set(str1).intersection(str2))
 
 # 23 Write a function that returns a set of prime numbers up to a given number n
+# def prime_numbers(n):
+#     primes = set()
+#     for num in range(2, n + 1):
+#         is_prime = all(num % i != 0 for i in range(2, int(num**0.5) + 1))
+#         if is_prime:
+#             primes.add(num)
+#     return primes
 
+# print(prime_numbers(20))
 
 # 24 Given three sets, set1 = {1, 2, 3}, set2 = {3, 4, 5}, and set3 = {5, 6, 7}, 
 # find the symmetric difference of all three sets.
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-set3 = {5, 6, 7}
-
-print(set1)
+# set1 = {1, 2, 3}
+# set2 = {3, 4, 5}
+# set3 = {5, 6, 7}
+# result =  set1.symmetric_difference(set2).symmetric_difference(set3)
+# print(result)
