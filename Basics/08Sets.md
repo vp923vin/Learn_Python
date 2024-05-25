@@ -177,7 +177,7 @@ There are four collection data types in the Python programming language:
     # output
     {'c', 'b', 3, 2, 'a', 1}
 
-Note: The  | operator only allows you to join sets with sets, and not with other data types 
+Note: The | operator only allows you to join sets with sets, and not with other data types 
 like you can with the  union() method.
 
 # Update
@@ -202,6 +202,7 @@ Note: Both union() and update() will exclude any duplicate items.
 
         set3 = set1.intersection(set2)
         print(set3)
+
   - can use the & operator instead of the intersection() method, and you will get the same result.
   - eg.
     set1 = {"apple", "banana", "cherry"}
@@ -245,11 +246,11 @@ Note: Both union() and update() will exclude any duplicate items.
     - You can use the ^ operator instead of the symmetric_difference() method, and you will get the same result.
     Note: The ^ operator only allows you to join sets with sets, and not with other data types like you 
          can with the symmetric_difference() method.
-
-        set1 = {"apple", "banana", "cherry"}
-        set2 = {"google", "microsoft", "apple"}
-        set3 = set1.symmetric_difference(set2)
-        print(set3)
+    eg.
+      set1 = {"apple", "banana", "cherry"}
+      set2 = {"google", "microsoft", "apple"}
+      set3 = set1.symmetric_difference(set2)
+      print(set3)
 
     The symmetric_difference_update() method will also keep all but the duplicates, but it will change the original set instead of returning a new set.
     eg. 
