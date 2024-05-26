@@ -140,11 +140,27 @@ more_fruits = ("orange", "grape")
 
 # 18 Create a tuple numbers = (1, 2, 3, 2, 4, 2, 5) and count how many times 2 appears in the tuple. Print the result.
 numbers = (1, 2, 3, 2, 4, 2, 5)
-count = 0
-for x in numbers:
-    if 2 == x:
-        count += 1
+# count = 0
+# for x in numbers:
+#     if 2 == x:
+#         count += 1
 
-print(count)
+# print(count)
 
 # 19 Find the index of the first occurrence of 2 in the numbers tuple and print it.
+# iteration = 0
+# indexes = list()
+# for x in numbers:
+#     if x == 2:
+#         indexes.append(iteration)
+#         print(x)
+#     iteration += 1
+    
+# print(indexes)
+        
+
+# 20 Create a nested tuple nested = ((1, 2, 3), ("a", "b", "c")). Access and print the element "b".
+
+# nested = ((1, 2, 3), ("a", "b", "c"))
+# print(nested[1][1])
+
